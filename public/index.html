@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Board Games</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Board Games</h1>
+    </header>
+    <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name"><br /><br />
+
+        <label for="intro">What board games do you like to play?</label><br />
+
+        <textarea id="intro" name="intro" rows="4" cols="50">
+
+        </textarea><br /><br />
+
+        <p>Which of these games have you played?</p>
+        <input type="checkbox" id="wingspan" name="game_played" value="WINGSPAN">
+        <label for="wingspan">Wingspan</label><br />
+        <input type="checkbox" id="catan" name="game_played" value="CATAN">
+        <label for="catan">Catan</label><br />
+        <input type="checkbox" id="tickettoride" name="game_played" value="TICKETTORIDE">
+        <label for="tickettoride">Ticket to Ride</label><br />
+        <input type="checkbox" id="clank" name="game_played" value="CLANK">
+        <label for="clank">Clank</label><br /><br />
+
+        <p>What is your favorite game mechanic?</p>
+        <input type="radio" id="engine" name="game_type" value="EngineBuilding">
+        <label for="engine">Engine building</label><br />
+        <input type="radio" id="worker" name="game_type" value="WorkerPlacement">
+        <label for="worker">Worker placement</label><br />
+        <input type="radio" id="deck" name="game_type" value="Deckbuilding">
+        <label for="deck">Deckbuilding</label><br />
+        <input type="radio" id="social" name="game_type" value="SocialDeduction">
+        <label for="social">Social deduction</label><br /><br />
+
+        <label for="colors">What color do you play as most often?</label><br />
+
+        <select name="colors" id="colors">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+        </select><br /><br />
+
+        <button type="button">Submit</button>
+
+    </form>
+    <hr/>
+    <section id="resultsDisplay">
+        <h1 class="heading">Results</h1><br/>
+        <table id="resultsTable">
+
+        </table>
+    </section>
+</body>
+</html>
